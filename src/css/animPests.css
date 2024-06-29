@@ -1,0 +1,77 @@
+@keyframes pests1 {
+  0% {
+		opacity: 0.5;
+    top: 20%;
+    left: 50%;
+		transform: scale(4);
+	}
+  
+	100% {
+		opacity: 1;
+    top: 10%;
+    left: 90%;
+		transform: scale(1.5);
+	}
+}
+
+@keyframes pests2 {
+  0% {
+		opacity: 0.5;
+    top: 10%;
+    left: 80%;
+		transform: scale(1);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 20%;
+    left: 50%;
+		transform: scale(4);
+	}
+}
+
+@keyframes pests3 {
+  0% {
+		opacity: 0.5;
+    top: 80%;
+    left: 40%;
+		transform: scale(1);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 80%;
+    left: 10%;
+		transform: scale(1);
+	}
+}
+
+@keyframes pests4 {
+  0% {
+		opacity: 0.5;
+    top: 80%;
+    left: 70%;
+		transform: scale(0.3);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 50%;
+    left: 20%;
+		transform: scale(0.6);
+	}
+}
+
+
+.card--pests:hover .circle1 {
+  animation: pests1 2s linear infinite;
+}
+.card--pests:hover .circle2 {
+  animation: pests2 2s linear infinite;
+}
+.card--pests:hover .circle3 {
+  animation: pests3 2s linear infinite;
+}
+.card--pests:hover .circle4 {
+  animation: pests4 2s linear infinite;
+}

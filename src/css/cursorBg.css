@@ -1,0 +1,11 @@
+.mouse--backgruond {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(236, 236, 8, 0.904);
+  backdrop-filter: blur(15px); 
+  opacity: 0.8;
+  display: none;
+  position: absolute;
+  pointer-events: none;
+}

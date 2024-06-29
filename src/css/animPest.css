@@ -1,0 +1,61 @@
+@keyframes pestizzides1 {
+  0% {
+		opacity: 0.5;
+		transform: translate(0%, 0%) scale(0.5);
+	}
+  
+	100% {
+		opacity: 0.5;
+		transform: translate(100%, 100%) scale(2);
+	}
+}
+
+@keyframes pestizzides2 {
+  0% {
+		opacity: 0.8;
+		transform: translate(0%, 0%) scale(0.5);
+	}
+  
+	100% {
+		opacity: 0.8;
+		transform: translate(50%, 50%) scale(2.5);
+	}
+}
+
+@keyframes pestizzides3 {
+  0% {
+		opacity: 0.8;
+		transform: translate(50%, 50%) scale(3.6);
+	}
+  
+	100% {
+		opacity: 0.8;
+		transform: translate(-80%, -90%) scale(0.5);
+	}
+}
+
+@keyframes pestizzides4 {
+  0% {
+		opacity: 0.8;
+		transform: translate(20%, 20%) scale(2);
+	}
+  
+	100% {
+		opacity: 0.8;
+		transform: translate(20%, 190%) scale(4);
+	}
+}
+
+/* Применение анимации к кругам при наведении */
+.card--pestizzides:hover .circle1 {
+  animation: pestizzides1 2s linear infinite;
+}
+.card--pestizzides:hover .circle2 {
+  animation: pestizzides2 2s linear infinite;
+}
+.card--pestizzides:hover .circle3 {
+  animation: pestizzides3 2s linear infinite;
+}
+.card--pestizzides:hover .circle4 {
+  animation: pestizzides4 2s linear infinite;
+}

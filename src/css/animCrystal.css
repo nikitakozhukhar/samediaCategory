@@ -1,0 +1,77 @@
+@keyframes crystal1 {
+  0% {
+		opacity: 1;
+    top: 50%;
+    left: 40%;
+		transform: scale(2);
+	}
+  
+	100% {
+		opacity: 1;
+    top: 50%;
+    left: 10%;
+		transform: scale(2);
+	}
+}
+
+@keyframes crystal2 {
+  0% {
+		opacity: 0.5;
+    top: 60%;
+    left: 60%;
+		transform: scale(1.5);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 60%;
+    left: 80%;
+		transform: scale(1.5);
+	}
+}
+
+@keyframes crystal3 {
+  0% {
+		opacity: 0.5;
+    top: 80%;
+    left: 80%;
+		transform: scale(0.5);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 90%;
+    left: 90%;
+		transform: scale(0.5);
+	}
+}
+
+@keyframes crystal4 {
+  0% {
+		opacity: 0.5;
+    top: 80%;
+    left: 70%;
+		transform: scale(0.6);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 85%;
+    left: 85%;
+		transform: scale(0.6);
+	}
+}
+
+
+.card--crystalLattice:hover .circle1 {
+  animation: crystal1 2s linear infinite;
+}
+.card--crystalLattice:hover .circle2 {
+  animation: crystal2 2s linear infinite;
+}
+.card--crystalLattice:hover .circle3 {
+  animation: crystal3 2s linear infinite;
+}
+.card--crystalLattice:hover .circle4 {
+  animation: crystal4 2s linear infinite;
+}

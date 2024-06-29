@@ -1,0 +1,77 @@
+@keyframes culture1 {
+  0% {
+		opacity: 0.5;
+    top: 5%;
+    left: 60%;
+		transform: scale(1.5);
+	}
+  
+	100% {
+		opacity: 1;
+    top: 10%;
+    left: 90%;
+		transform: scale(2);
+	}
+}
+
+@keyframes culture2 {
+  0% {
+		opacity: 0.5;
+    top: 50%;
+    left: 30%;
+		transform: scale(2);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 20%;
+    left: 70%;
+		transform: scale(0.5);
+	}
+}
+
+@keyframes culture3 {
+  0% {
+		opacity: 0.5;
+    top: 80%;
+    left: 30%;
+		transform: scale(1.5);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 50%;
+    left: 50%;
+		transform: scale(0.5);
+	}
+}
+
+@keyframes culture4 {
+  0% {
+		opacity: 0.5;
+    top: 50%;
+    left: 90%;
+		transform: scale(2);
+	}
+  
+	100% {
+		opacity: 0.5;
+    top: 80%;
+    left: 40%;
+		transform: scale(2);
+	}
+}
+
+
+.card--culture:hover .circle1 {
+  animation: culture1 2s linear infinite;
+}
+.card--culture:hover .circle2 {
+  animation: culture2 2s linear infinite;
+}
+.card--culture:hover .circle3 {
+  animation: culture3 2s linear infinite;
+}
+.card--culture:hover .circle4 {
+  animation: culture4 2s linear infinite;
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.18px;
+  letter-spacing: -1px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  height: auto;
+  margin: auto;
+  padding: 50px;
+  position: relative;
+}
+
+.category__decor--leaf,
+.category__decor--leaf2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.category__decor--leaf {
+  top: 0;
+  left: 0;
+}
+
+.category__decor--leaf2 {
+  top: 300px;
+  right: 32%;
+}
+
+.category__decor--circle {
+  position: absolute;
+  top: -30px;
+  right: -80px;
+  width: 385px;
+  height: 385px;
+}
+
+.category__title {
+  position: relative;
+  margin-left: 127px;
+  margin-bottom: 50px;
+  font-family: Impact;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.79px;
+}
+
+.category__title::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 88px;
+  height: 4px;
+  background-color: #FFCC01;
+}
+
+.decor_dots::before {
+  content: url('../img/Frame.png');
+  position: absolute;
+  top: 230px;
+  left: -180px
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  height: 188px;
+  padding: 10px;
+  border-radius: 16px;
+  border: 2px solid #79C800;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.356);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.card:hover {
+  background-color: rgb(121 200 0 / 40%);
+}
+
+.card:hover .circles {
+  opacity: 0.5;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 10px;
+}
+
+.card__img-container {
+  margin-left: 20px;
+}
+
+.card__img {
+  width: 100%;
+  height: 70%;
+}
+.card__img2 {
+  display: none;
+  width: 100%;
+  height: 70%;
+}
+
+.card__img-container--culture {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: auto;
+}
+
+.card__img--culture {
+  width: 100%;
+  height: 80%;
+}
+
+.card--pests {
+  position: relative; 
+}
+
+.card--pests::before {
+  content: url('../img/decor.png');
+  position: absolute;
+  top: -170px;
+  left: 230px;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(243, 247, 238, 0.548);
+  transform-origin: 150% center;
+}
+.circle1 { top: 5%; left: 10%; }
+.circle2 { top: 20%; right: 50%; }
+.circle3 { bottom: 50%; left: 60%; }
+.circle4 { bottom: 20%; right: 20%; }
+
+@media (max-width: 1024px) {
+  .category__title {
+    margin-left: 140px;
+    font-size: 32px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card {
+    width: 80vw;
+    max-width: 320px;
+  }
+  .card--pests::before {
+    top: -325px;
+    left: 410px;
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+  .category {
+    padding: 30px;
+  }
+  
+  .category__title {
+    margin-left: 120px;
+    font-size: 28px;
+  }
+  
+  .card {
+    width: 90vw;
+    max-width: 280px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .card__img-container {
+    width: 70%;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__img--culture {
+    width: 60%;
+  }
+  
+  .category__decor--circle {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    right: -50px;
+  }
+  .card--pests::before {
+    top: -250px;
+    left: 410px;
+  }
+}
